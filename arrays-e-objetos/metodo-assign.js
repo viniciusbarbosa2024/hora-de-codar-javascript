@@ -1,22 +1,19 @@
-const obj = {
-    a: 'teste',
-    b: 50
+const obj1 = {
+    nome: 'Vinícius',
+    idade:20
 }
 
 const obj2 = {
-    c: true
+    time: 'Corinthians',
+    idade: 21
 }
 
-Object.assign(obj2,obj)
+Object.assign(obj2,obj1)
 
 console.log(obj2)
 
-//Quando uma propriedade do objeto receptor das propriedades de outro objeto possui o mesmo nome da propriedade do objeto copiado,a propriedade do copiado sobrepõe a do receptor. Ex.:
+//As propriedades de mesmo nome ficam com o valor do objeto copiado,não com o do recepetor
 
-const obj3 = {
-    a: 500
-}
 
-Object.assign(obj3,obj)
 
-console.log(obj3) //O a:'teste' sobrepõe o a:500
+
